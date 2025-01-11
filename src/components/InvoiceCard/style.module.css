@@ -5,7 +5,7 @@
     margin: 10px;
     width: 350px;
     background-color: #fff;
-    font-family: "Courier New", Courier, monospace; /* פונט קלאסי שמתאים לחשבוניות */
+    font-family: "Courier New", Courier, monospace;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
@@ -13,20 +13,20 @@
     text-align: center;
     color: #000;
     margin-bottom: 20px;
-    font-size: 24px; /* אותיות גדולות יותר */
+    font-size: 24px; 
   }
   
   .invoiceDetails {
     display: flex;
     flex-direction: column;
-    line-height: 2.5; /* מרווח אנכי גדול יותר */
-    font-size: 18px; /* אותיות גדולות יותר */
+    line-height: 2.5;
+    font-size: 26px; 
   }
   
   .invoiceDetails h5 {
     margin: 0;
     color: #000;
-    border-bottom: 1px solid #ccc; /* קו בין שורות */
-    padding-bottom: 5px; /* ריווח מתחת לקו */
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px; 
   }
   

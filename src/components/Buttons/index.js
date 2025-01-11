@@ -7,11 +7,13 @@ export default function Buttons() {
   
   return (
     <div className = {styles.container}>
+      <img src='/logo-bizz.png' />
         <Button type={"Zoho"} setMessage={setMessage}/>
         <Button type={"Stripe"} setMessage={setMessage}/>
         <Button type={"Square"} setMessage={setMessage}/>
         <Button type={"Wave"} setMessage={setMessage}/>
-        {message && <p>{message}</p>}
+        {message &&
+         <div className={styles.successMessage}>{message}</div>}
 
     </div>
   )

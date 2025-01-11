@@ -7,7 +7,8 @@ export default function Button({ type, setMessage }) {
     const [redirect, setRedirect] = useState(false);
 
     const handleClick = () => {
-        const url = "https://squareup.com/oauth2/authorize?client_id=sq0idp-C867CyWXrqJwKuZc72t9wQ&response_type=code&scope=MERCHANT_PROFILE_READ CUSTOMERS_READ INVOICES_READ INVOICES_WRITE ORDERS_WRITE ITEMS_READ&redirect_uri=http://localhost:3000/";
+        const url = "https://squareup.com/oauth2/authorize?client_id=sq0idp-nlZ6beR7RocZP-dzQtRS5g&response_type=code&scope=MERCHANT_PROFILE_READ INVOICES_READ ITEMS_READ&redirect_uri=http://localhost:3000/&prompt=consent";
+        // const url = "https://squareup.com/oauth2/authorize?client_id=sq0idp-nlZ6beR7RocZP-dzQtRS5g&response_type=code&scope=MERCHANT_PROFILE_READ CUSTOMERS_READ INVOICES_READ INVOICES_WRITE ORDERS_WRITE ITEMS_READ&redirect_uri=http://localhost:3000/&prompt=consent";
         window.location.href = url;
     };
 
@@ -25,7 +26,7 @@ export default function Button({ type, setMessage }) {
                     .then((response) => {
                         if (response.data === 'Authorization successful!') {
                             console.log('first name: ' + response.data)
-                            setMessage('square authorization successful!');
+                            setMessage(<span style={{ direction: 'rtl' }}>התחברת בהצלחה ל-Square!</span>);
                             setTimeout(() => {
                                 setRedirect(true);
                             }, 3000);
